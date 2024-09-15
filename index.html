@@ -112,7 +112,7 @@
             </ul>
           </div>
         </div>
-        <div class="flex gap-3 justify-center">
+        <div class="md:flex hidden gap-3 justify-center">
           <a
             href="tel:+5541998572779"
             class="font-medium flex items-center gap-3"
@@ -161,18 +161,22 @@
                 Maximizar o Desempenho de Seus Equipamentos
               </h1>
             </div>
-            <div class="mt-8">
-              <a
-                href="#nosso-servicos"
-                class="py-2 font-medium uppercase px-12 border-2 font-medium hover:bg-black hover:text-white ease-in-out duration-200 border-black"
-              >
-                Serviços</a
-              >
-              <a
-                href="#contact-form-link"
-                class="py-2 uppercase px-12 border-2 text-white bg-black font-medium border-black ease-in-out duration-200 hover:bg-gray-800"
-                >Entre em contato</a
-              >
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-3 mr-3 md:mr-0">
+              <div class="flex items-center justify-center">
+                <a
+                  href="#nosso-servicos"
+                  class="py-2 w-full flex justify-center font-medium uppercase px-12 border-2 font-medium hover:bg-black hover:text-white ease-in-out duration-200 border-black"
+                >
+                  Serviços</a
+                >
+              </div>
+              <div class="flex items-center justify-center">
+                <a
+                  href="#contact-form-link"
+                  class="py-2 w-full flex justify-center uppercase px-8 border-2 text-white bg-black font-medium border-black ease-in-out duration-200 hover:bg-gray-800"
+                  >Entre em contato</a
+                >
+              </div>
             </div>
           </div>
           <div class="flex justify-center">
@@ -183,7 +187,7 @@
             />
           </div>
         </header>
-        <section class="mt-6 px-12"  id="nosso-servicos">
+        <section class="mt-6 px-12" id="nosso-servicos">
           <h2 class="text-3xl montserrat-font uppercase mb-6">
             Nossos <strong>Serviços</strong>
           </h2>
@@ -275,7 +279,8 @@
           </div>
         </section>
       </div>
-      <section id="contact-form-link"
+      <section
+        id="contact-form-link"
         class="mt-6 bg-[#1B1B1B] md:grid grid-cols-2 md:h-[700px] bg-form"
       >
         <div class="bottom-4 relative md:block hidden">
@@ -452,7 +457,10 @@
           />
         </div>
       </section>
-      <section id="sobre-nos" class="bg-[#292525] md:grid grid-cols-2 gap-12 mt-12 px-6 py-24">
+      <section
+        id="sobre-nos"
+        class="bg-[#292525] md:grid grid-cols-2 gap-12 mt-12 px-6 py-24"
+      >
         <div class="flex flex-col justify-center">
           <h2 class="montserrat-font text-2xl uppercase text-white font-bold">
             Sobre nós
@@ -465,7 +473,11 @@
             empresa
           </p>
         </div>
-        <form action="submit" id="contact-form" class="mt-5 flex flex-col gap-4 text-white">
+        <form
+          action="submit"
+          id="contact-form"
+          class="mt-5 flex flex-col gap-4 text-white"
+        >
           <div class="field grid grid-cols-1">
             <label for="txtName" class="font-light">Nome:</label>
             <input
@@ -503,8 +515,9 @@
             <button
               type="submit"
               class="text-black bg-white px-12 py-2 hover:bg-gray-800 hover:text-white ease-in-out duration-200"
-              >Enviar</button
             >
+              Enviar
+            </button>
           </div>
         </form>
       </section>
@@ -655,8 +668,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/sendEmail.js"></script>
-    <script>
-     
-    </script>
+    <script></script>
   </body>
 </html>
