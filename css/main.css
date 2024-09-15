@@ -12,10 +12,3 @@
 .bg-form {
   background: url(../img/bg-form.png) #1B1B1B no-repeat top right -10px;
 }
-
-.slideshow-container {
-  position: relative;
-  max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
