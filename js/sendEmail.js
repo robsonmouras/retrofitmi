@@ -126,3 +126,18 @@ function handlePhone(event) {
     .replace(/^(\d{2})(\d)/g, "($1) $2")
     .replace(/(\d)(\d{4})$/, "$1-$2");
 }
+
+
+// Seleciona o botão do menu e o elemento do menu que será mostrado/escondido
+const menuButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+const menu = document.getElementById('navbar-default');
+
+// Adiciona um evento de clique ao botão do menu
+menuButton.addEventListener('click', function() {
+  // Verifica se o menu está visível e alterna a classe 'hidden'
+  menu.classList.toggle('hidden');
+  
+  // Alterna o atributo 'aria-expanded' entre 'true' e 'false'
+  const expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+  menuButton.setAttribute('aria-expanded', !expanded);
+});
