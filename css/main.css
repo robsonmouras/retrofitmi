@@ -1,0 +1,21 @@
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.background-effect {
+  background: url(../img/bg-effect.png) no-repeat top 300px left;
+}
+
+.bg-form {
+  background: url(../img/bg-form.png) #1B1B1B no-repeat top right -10px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
