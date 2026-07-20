@@ -12,3 +12,25 @@
 .bg-form {
   background: url(../img/bg-form.png) #1B1B1B no-repeat top right -10px;
 }
+
+.whatsapp-pulse {
+  animation: whatsapp-pulse 2s infinite;
+}
+
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-pulse {
+    animation: none;
+  }
+}
