@@ -1,9 +1,33 @@
+# Compressão de texto (HTML, CSS, JS, SVG, JSON)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Tipo MIME correto para WebP
+AddType image/webp .webp
+
 <IfModule mod_expires.c>
   ExpiresActive On
 
   ExpiresByType text/html "access plus 1 hour"
   ExpiresByType text/css "access plus 7 days"
   ExpiresByType application/javascript "access plus 7 days"
-  ExpiresByType image/webp "access plus 30 days"
-  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Cache-Control explícito (tem precedência sobre Expires na maioria dos servidores)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|png|jpe?g|svg|woff2?|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
 </IfModule>
