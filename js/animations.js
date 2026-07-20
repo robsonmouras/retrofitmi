@@ -9,7 +9,10 @@
   var ease = "power3.out";
 
   // ---- Entrada do topo (nav + hero) ----
-  gsap.from("nav", { y: -30, opacity: 0, duration: 0.8, ease: ease });
+  // clearProps remove o transform residual ao final: sem isso, o <nav> vira um
+  // novo contexto de empilhamento e o menu mobile (position:absolute) passa a
+  // ser pintado atrás do conteúdo do hero, mesmo estando visualmente por cima.
+  gsap.from("nav", { y: -30, opacity: 0, duration: 0.8, ease: ease, clearProps: "transform" });
 
   gsap.from("header h1", {
     y: 40,

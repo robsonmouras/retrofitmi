@@ -136,8 +136,30 @@ const menu = document.getElementById('navbar-default');
 menuButton.addEventListener('click', function() {
   // Verifica se o menu está visível e alterna a classe 'hidden'
   menu.classList.toggle('hidden');
-  
+
   // Alterna o atributo 'aria-expanded' entre 'true' e 'false'
   const expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
   menuButton.setAttribute('aria-expanded', !expanded);
+});
+
+function closeMobileMenu() {
+  if (!menu.classList.contains('hidden')) {
+    menu.classList.add('hidden');
+    menuButton.setAttribute('aria-expanded', 'false');
+  }
+}
+
+// Fecha o menu mobile ao clicar em qualquer link dele (senão ele fica aberto
+// sobrepondo o conteúdo depois que a página rola até a âncora clicada)
+menu.querySelectorAll('a').forEach(function (link) {
+  link.addEventListener('click', closeMobileMenu);
+});
+
+// Fecha o menu mobile ao clicar fora dele
+document.addEventListener('click', function (event) {
+  const clickedInsideMenu = menu.contains(event.target);
+  const clickedButton = menuButton.contains(event.target);
+  if (!clickedInsideMenu && !clickedButton) {
+    closeMobileMenu();
+  }
 });

@@ -34,3 +34,38 @@
     animation: none;
   }
 }
+
+/* Menu mobile: some das classes utilitárias abaixo não existem no build do
+   Tailwind (arquivo compilado/congelado), por isso são escritas aqui como
+   CSS puro, sempre restritas a telas < 768px para não afetar o desktop. */
+@media (max-width: 767.98px) {
+  .mobile-menu-panel {
+    /* Usa a altura real do cabeçalho em vez de um valor fixo (top-24),
+       que podia não bater com a altura real da logo/botão em telas estreitas. */
+    top: 100%;
+  }
+
+  .mobile-menu-panel > ul {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, .15), 0 8px 10px -6px rgba(0, 0, 0, .1);
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    row-gap: 1.5rem;
+  }
+
+  /* text-4xl (2.25rem) quebra o título do hero em ~9 linhas em telas
+     estreitas; reduz para melhorar a leitura sem mexer no desktop. */
+  header h1 {
+    font-size: 1.75rem;
+    line-height: 2.15rem;
+  }
+}
+
+.mobile-menu-contact {
+  border-top: 1px solid #f3f4f6;
+  margin-top: .5rem;
+  padding-top: .5rem;
+}

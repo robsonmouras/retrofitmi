@@ -116,8 +116,8 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHQ6JZSH"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <nav class="container m-auto bg-transparent border-gray-200">
-    <div class="relative md:flex flex-wrap justify-between items-center gap-4 mx-auto container-xl p-6">
+  <nav class="container m-auto bg-transparent border-gray-200 relative z-10">
+    <div class="relative md:flex flex-wrap justify-between items-center gap-4 mx-auto p-6">
       <div class="flex items-center gap-3">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="img/retrofit-logo.svg" alt="Retrofit Manutenção Industrial" width="259" height="86" />
@@ -133,7 +133,7 @@
               d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
-        <div class="absolute left-0 top-24 md:top-0 md:relative hidden w-full md:block md:w-auto container-xl"
+        <div class="mobile-menu-panel absolute left-0 md:top-0 md:relative hidden w-full md:block md:w-auto"
           id="navbar-default">
           <ul
             class="font-medium md:flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
@@ -153,6 +153,24 @@
             <li>
               <a href="#contact-form-link"
                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-500 md:p-0">Contato</a>
+            </li>
+            <li class="mobile-menu-contact md:hidden">
+              <a href="tel:+5541998572779" class="flex items-center gap-3 py-2 px-3 text-gray-900 rounded hover:bg-gray-100">
+                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z">
+                  </path>
+                </svg>
+                41.99857.2779</a>
+            </li>
+            <li class="md:hidden">
+              <a href="mailto:comercial@retrofitmi.com.br" class="flex items-center gap-3 py-2 px-3 text-gray-900 rounded hover:bg-gray-100">
+                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M2.24283 6.85435L11.4895 1.3086C11.8062 1.11865 12.2019 1.11872 12.5185 1.30878L21.7573 6.85433C21.9079 6.9447 22 7.10743 22 7.28303V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7.28315C2 7.10748 2.09218 6.94471 2.24283 6.85435ZM4 8.13261V19H20V8.13214L12.0037 3.33237L4 8.13261ZM12.0597 13.6983L17.3556 9.23532L18.6444 10.7647L12.074 16.3017L5.36401 10.7717L6.63599 9.2283L12.0597 13.6983Z">
+                  </path>
+                </svg>
+                comercial@retrofitmi.com.br</a>
             </li>
           </ul>
         </div>
@@ -210,7 +228,7 @@
         </h2>
         <div class="slideshow-container relative w-full">
           <!-- Slides (grid de 4 itens por slide) -->
-          <div class="grid md:grid-cols-5 grid-cols-2 gap-12">
+          <div class="grid md:grid-cols-5 grid-cols-1 gap-12">
             <!-- Slide 1 -->
             <div class="flex flex-col items-center justify-center">
               <img src="img/icons4.svg" alt="Retífica e Recuperação de Componentes" class="mb-4" width="120" height="119" />
@@ -494,7 +512,7 @@
       </div>
     </div>
   </div>
-  <footer class="bg-[#1B1B1B] mt-24 px-3 py-6 grid grid-cols-2 justify-between items-center">
+  <footer class="site-footer bg-[#1B1B1B] mt-24 px-3 py-6 grid grid-cols-2 justify-between items-center">
     <img src="img/retrofit-logo.svg" alt="Logo Retrofit" width="259" height="86" />
     <div class="text-white md:flex gap-3 justify-end">
       <div class="flex gap-4 justify-center">
