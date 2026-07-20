@@ -17,24 +17,62 @@
     content="Especialistas em manutenção industrial, retífica, balanceamento, usinagem e modernização de máquinas. Soluções eficientes para equipamentos industriais.">
   <meta name="keywords"
     content="manutenção industrial, retífica industrial, balanceamento de máquinas, usinagem industrial, soldagem industrial, retrofit de máquinas">
+  <meta name="robots" content="index, follow">
   <!-- Open Graph (Facebook / WhatsApp) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Manutenção Industrial e Retífica | Retrofit">
+  <meta property="og:site_name" content="Retrofit Manutenção Industrial">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Manutenção Industrial e Retífica em Curitiba | Retrofit MI">
   <meta property="og:description"
     content="Retífica, balanceamento, usinagem e manutenção industrial para aumentar a vida útil das suas máquinas.">
   <meta property="og:url" content="https://retrofitmi.com.br/">
-  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://retrofitmi.com.br/img/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Profissional operando torno mecânico em ambiente industrial, com o logo da Retrofit Manutenção Industrial">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Manutenção Industrial e Retífica | Retrofit MI">
+  <meta name="twitter:title" content="Manutenção Industrial e Retífica em Curitiba | Retrofit MI">
   <meta name="twitter:description"
     content="Soluções completas em manutenção industrial, retífica e modernização de máquinas.">
+  <meta name="twitter:image" content="https://retrofitmi.com.br/img/og.jpg">
   <!-- Canonical -->
   <link rel="canonical" href="https://retrofitmi.com.br/">
-  <!-- Meta Robots -->
-  <meta name="robots" content="index, follow" />
   <!-- Meta Author -->
   <meta name="author" content="Retrofit" />
+  <!-- Dados estruturados: negócio local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://retrofitmi.com.br/#negocio",
+    "name": "Retrofit Manutenção Industrial",
+    "url": "https://retrofitmi.com.br/",
+    "logo": "https://retrofitmi.com.br/img/retrofit-logo.svg",
+    "image": "https://retrofitmi.com.br/img/dois-homens-trabalhand-header.png",
+    "description": "Especialistas em manutenção industrial, retífica, balanceamento, usinagem e modernização de máquinas em Curitiba.",
+    "telephone": "+55-41-99857-2779",
+    "email": "comercial@retrofitmi.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Curitiba",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/retrofit_manutencaoindustrial/",
+      "https://www.facebook.com/profile.php?id=100092245851463"
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Retífica e Recuperação de Componentes" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção Preventiva e Corretiva" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Balanceamento e Alinhamento de Máquinas" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reformas e Modernização de Máquinas" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Usinagem e Soldagem Especializada" } }
+    ]
+  }
+  </script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -151,8 +189,8 @@
           </div>
         </div>
         <div class="flex justify-center">
-          <img src="img/dois-homens-trabalhand-header.png" class="w-9/12 mt-8"
-            alt="imagem de dois homens trabalhando de capacete olhando para uma planilha" />
+          <img src="img/dois-homens-trabalhand-header.png" class="w-9/12 mt-8" width="740" height="816"
+            fetchpriority="high" alt="Dois profissionais de capacete analisando uma planilha em ambiente industrial" />
         </div>
       </header>
       <section class="mt-6 px-12" id="nosso-servicos">
@@ -229,7 +267,7 @@
     </div>
     <section id="contact-form-link" class="mt-6 bg-[#1B1B1B] md:grid grid-cols-2 md:h-[700px] bg-form">
       <div class="bottom-4 relative md:block hidden">
-        <img src="img/homem-trabalhand-form.png" alt="Homem trabalhando de capacete" class="" />
+        <img src="img/homem-trabalhand-form.png" alt="Homem trabalhando de capacete" loading="lazy" decoding="async" />
       </div>
       <div class="text-white mt-6 p-12 flex flex-col justify-center">
         <h3 class="uppercase text-3xl montserrat-font">
@@ -239,17 +277,17 @@
         <p>Nossa equipe está pronta para ajudar.</p>
         <form action="submit" class="mt-5 flex flex-col gap-4" id="contact-form2">
           <div class="field grid grid-cols-1">
-            <label for="txtName" class="font-light">Nome:</label>
+            <label for="txtName2" class="font-light">Nome:</label>
             <input type="text" name="txtName" id="txtName2" placeholder="Ex: John Doe"
               class="p-2 border text-gray-900 border-[#1E1E1E]" />
           </div>
           <div class="field grid grid-cols-1">
-            <label for="txtName" class="font-light">Telefone:</label>
+            <label for="txtPhone2" class="font-light">Telefone:</label>
             <input type="tel" name="txtPhone" id="txtPhone2" placeholder="(00)0000-0000" maxlength="15" required
               class="p-2 text-gray-900 border border-[#1E1E1E]" onkeyup="handlePhone(event)" />
           </div>
           <div class="field grid grid-cols-1">
-            <label for="txtName" class="font-light">E-mail:</label>
+            <label for="txtEmail2" class="font-light">E-mail:</label>
             <input type="email" name="txtEmail2" id="txtEmail2" placeholder="Ex.: seuemail@dominio.com.br"
               class="p-2 border text-gray-900 border-[#1E1E1E]" />
           </div>
@@ -314,33 +352,33 @@
         </div>
         <div class="mt-12 md:mt-0">
           <img src="img/homem-trabalhando-maquina-diferencia.png"
-            alt="Homem trabalhando com uma furadeira de bancada" />
+            alt="Homem trabalhando com uma furadeira de bancada" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
     <section id="clientes" class="my-24 px-6 grid grid-cols-3 md:grid-cols-7 justify-center items-center gap-8 ">
       <div class="flex justify-center">
-        <img src="img/klingspor-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Klingspor" title="Klingspor" />
+        <img src="img/klingspor-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Klingspor" title="Klingspor" loading="lazy" decoding="async" />
       </div>
       <div class="flex justify-center">
-        <img src="img/marna-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Marna" alt="Marna" />
+        <img src="img/marna-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Marna" title="Marna" loading="lazy" decoding="async" />
       </div>
       <div class="flex justify-center">
-        <img src="img/convicta-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Convicta" title="Convicta" />
-      </div>
-
-      <div class="flex justify-center">
-        <img src="img/goldenfix-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Goldenfix" title="Goldenfix" />
-      </div>
-      <div class="flex justify-center">
-        <img src="img/pinfer-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Pinfer" title="Pinfer" />
-      </div>
-      <div class="flex justify-center">
-        <img src="img/multivag-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Multivag" title="Multivag" />
+        <img src="img/convicta-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Convicta" title="Convicta" loading="lazy" decoding="async" />
       </div>
 
       <div class="flex justify-center">
-        <img src="img/laserflex-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Laserflex" title="Laserflex" />
+        <img src="img/goldenfix-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Goldenfix" title="Goldenfix" loading="lazy" decoding="async" />
+      </div>
+      <div class="flex justify-center">
+        <img src="img/pinfer-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Pinfer" title="Pinfer" loading="lazy" decoding="async" />
+      </div>
+      <div class="flex justify-center">
+        <img src="img/multivag-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Multivag" title="Multivag" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="flex justify-center">
+        <img src="img/laserflex-logo.png" class="opacity-30 hover:opacity-80 transition" alt="Logo Laserflex" title="Laserflex" loading="lazy" decoding="async" />
       </div>
     </section>
     <section id="sobre-nos" class="bg-[#292525] md:grid grid-cols-2 gap-12 mt-12 px-6 py-24">
@@ -363,12 +401,12 @@
             class="p-2 border text-gray-900 border-[#1E1E1E]" />
         </div>
         <div class="field grid grid-cols-1">
-          <label for="txtName" class="font-light">Telefone:</label>
-          <input type="tel" name="txtPhone" id="txtPhone" placeholder="Ex: John Doe" maxlength="15"
+          <label for="txtPhone" class="font-light">Telefone:</label>
+          <input type="tel" name="txtPhone" id="txtPhone" placeholder="(00) 0000-0000" maxlength="15"
             class="p-2 text-gray-900 border border-[#1E1E1E]" onkeyup="handlePhone(event)" />
         </div>
         <div class="field grid grid-cols-1">
-          <label for="txtName" class="font-light">E-mail:</label>
+          <label for="txtEmail" class="font-light">E-mail:</label>
           <input type="email" name="txtEmail" id="txtEmail" placeholder="Ex.: seuemail@dominio.com.br"
             class="p-2 border text-gray-900 border-[#1E1E1E]" />
         </div>
@@ -382,7 +420,7 @@
     </section>
     <section id="missao-visao-valores" class="grid gap-12 background-effect mt-12">
       <div class="px-3 md:flex gap-12">
-        <img src="img/img1.png" alt="Homem trabalhando em fabrica" />
+        <img src="img/img1.png" alt="Homem trabalhando em fábrica" loading="lazy" decoding="async" />
         <div class="flex flex-col justify-center">
           <h3 class="montserrat-font font-bold text-4xl uppercase mt-4">
             Missão
@@ -405,10 +443,10 @@
             mantendo suas máquinas em alto desempenho.
           </p>
         </div>
-        <img src="img/img2.png" alt="Mulher de capacete operando computador" class="md:order-2 order-1" />
+        <img src="img/img2.png" alt="Mulher de capacete operando computador" class="md:order-2 order-1" loading="lazy" decoding="async" />
       </div>
       <div class="px-3 md:flex gap-12">
-        <img src="img/img3.png" alt="Mulher de capacete operando computador" />
+        <img src="img/img3.png" alt="Mulher de capacete operando painel de máquina industrial" loading="lazy" decoding="async" />
         <div class="flex flex-col justify-center">
           <h3 class="montserrat-font font-bold text-4xl uppercase mt-4">
             valores
